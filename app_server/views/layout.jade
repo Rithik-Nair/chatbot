@@ -6,11 +6,27 @@ html
     link(rel='stylesheet', href='/bootstrap/css/amelia.bootstrap.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-  .container
-    block content
-    footer
-      .row
-        .col-xs-12
-          small &copy; ChatBot Application 2024
+    .navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          a.navbar-brand(href='/') ChatHub
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-main')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        #navbar-main.navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li
+              a(href='/about/') <b> About </b>
+            li
+              a(href='/help') <b> Help </b>
+            li
+              a(href='/contact') <b> Contact Us </b>
+    .container
+      block content
+      footer
+        .row
+          .col-xs-12
+            small &copy; ChatHub Application 2024
     script(src='/javascripts/jquery-1.11.1.min.js')
     script(src='/javascripts/bootstrap.min.js')

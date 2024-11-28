@@ -1,0 +1,208 @@
+/* General Body Styling */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;  /* Added font-family for better readability */
+  background-image: url('/images/NEMESIS.jpg'); /* Background image for the body */
+  background-size: cover;  /* Make sure background covers entire page */
+  background-position: center;  /* Center the image */
+  background-attachment: fixed;  /* Keep background fixed during scroll */
+  background-repeat: no-repeat; /* Prevent repeating the background image */
+}
+
+/* Container for all content */
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.85);  /* Slight transparent background */
+  border-radius: 10px;  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Soft shadow for the content */
+}
+
+/* Chat Container */
+#chat-container {
+  border: 1px solid #ddd;
+  padding: 20px;
+  height: 400px;
+  overflow-y: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background-color: rgba(249, 249, 249, 0.8);  /* Light grey background */
+  border-radius: 8px;  /* Rounded corners */
+}
+
+/* Messages in the chat */
+#messages {
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+}
+
+#messages li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 5px;
+  background-color: #f8f9fa;  /* Light background color */
+  border-radius: 6px;
+  max-width: 85%;
+  margin-left: auto;  /* Align to the right */
+}
+
+/* Input field and button styling for chat */
+.input-group {
+  display: flex;
+  align-items: center;  /* Align input and button horizontally */
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.input-group input {
+  flex-grow: 1;  /* Allow the input to take available space */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-group button {
+  padding: 7px 7px;  /* Add more padding to make the button more clickable */
+  background-color: #28a745;  /* Green button */
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: -25px;  /* Reduced margin-left to move button a bit left */
+}
+
+.input-group button:hover {
+  background-color: #218838;  /* Darker green on hover */
+}
+
+
+.input-group button:hover {
+  background-color: #218838;  /* Darker green on hover */
+}
+
+/* Styling for smaller screens */
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  #chat-container {
+    height: 350px;
+  }
+
+  .input-group input {
+    width: 70%;  /* Smaller input field */
+  }
+
+  .input-group button {
+    width: 25%;  /* Smaller button */
+  }
+}
+
+/* About, FAQ, Contact, and Help Sections - Styling */
+.about, .faq, .contact, .help {
+  margin-top: 30px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about h1, .faq h1, .contact h1, .help h1 {
+  font-size: 28px;
+  text-align: center;
+  color: #333;
+}
+
+.about p, .faq p, .contact p, .help p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* FAQ Section Styling */
+.faq ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.faq li {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.faq li h4 {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Contact Section - Add styles for contact form */
+.contact form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact input, .contact textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact button {
+  padding: 12px;
+  background-color: #007bff;  /* Blue button */
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #0056b3;  /* Darker blue on hover */
+}
+
+/* Partials - Footer and Header Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #343a40;
+  color: white;
+  margin-top: 30px;
+}
+
+footer small {
+  font-size: 14px;
+}
+
+/* Header - Navbar Styling */
+.navbar {
+  background-color: #007bff;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar a:hover {
+  color: #ddd;
+}

@@ -1,5 +1,13 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Chatbot - Welcome
+    link(rel='stylesheet', href='/bootstrap/css/amelia.bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    .container
+      .jumbotron
+        h1 Chat with our ChatBot!
+        p Welcome to our chatbot. Click below to start chatting.
+        a.btn.btn-primary(href='/chat') Start Chatting

@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+  .container
+    h1 Chat Room
+    #chat-container
+      ul#messages
+    .input-group
+      input#message-input.form-control(type='text', placeholder='Type your message...')
+      span.input-group-btn
+        button#send-btn.btn.btn-primary Send
+    script(src='/javascripts/chat.js')
